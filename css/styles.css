@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    background-color: wheat;
+    background-image: linear-gradient( 45deg,black 25%, transparent 25%, transparent 74%, black 75%, black), 
+    linear-gradient( 45deg,black 25%, transparent 25%, transparent 74%, black 75%, black);
+    background-size:100px 100px;
+    background-position: 0 0, 50px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 35px solid brown;
+}
+
+.fieldname,
+.checker {
+    position: absolute;
+}
+
+.checker {
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.checker--white {
+    background: white;
+}
+
+.checker--peru {
+    background: peru;
+}
+
+.col-1 {
+    left: calc(100% / 8 * 1 - calc(100% / 8 /2));
+}
+
+.col-2 {
+    left: calc(100% / 8 * 2 - calc(100% / 8 /2));
+}
+
+.col-3 {
+    left: calc(100% / 8 * 3 - calc(100% / 8 /2));
+}
+
+.col-4 {
+    left: calc(100% / 8 * 4 - calc(100% / 8 /2));
+}
+
+.col-5 {
+    left: calc(100% / 8 * 5 - calc(100% / 8 /2));
+}
+
+.col-6 {
+    left: calc(100% / 8 * 6 - calc(100% / 8 /2));
+}
+
+.col-7 {
+    left: calc(100% / 8 * 7 - calc(100% / 8 /2));
+}
+
+.col-8 {
+    left: calc(100% / 8 * 8 - calc(100% / 8 /2));
+}
+
+.row-1 {
+    top: calc(100% / 8 * 1 - calc(100% / 8 /2));
+}
+
+.row-2 {
+    top: calc(100% / 8 * 2 - calc(100% / 8 /2));
+}
+
+.row-3 {
+    top: calc(100% / 8 * 3 - calc(100% / 8 /2));
+}
+
+.row-4 {
+    top: calc(100% / 8 * 4 - calc(100% / 8 /2));
+}
+
+.row-5 {
+    top: calc(100% / 8 * 5 - calc(100% / 8 /2));
+}
+
+.row-6 {
+    top: calc(100% / 8 * 6 - calc(100% / 8 /2));
+}
+
+.row-7 {
+    top: calc(100% / 8 * 7 - calc(100% / 8 /2));
+}
+
+.row-8 {
+    top: calc(100% / 8 * 8 - calc(100% / 8 /2));
+}
+
+.fieldname--top {
+    top: -15px;
+    transform: translate(-50%, -50%);
+}
+
+.fieldname--bottom {
+    bottom: -15px;
+    transform: translate(-50%, 50%);
+}
+
+.fieldname--left {
+    left: -15px;
+    transform: translate(-50%, -50%);
+}
+
+.fieldname--right {
+    right: -15px;
+    transform: translate(50%, -50%);
+}
